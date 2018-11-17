@@ -1,0 +1,132 @@
+body {
+    background-image: url('../images/circles-light.png')
+}
+
+.navbar-custom .navbar-brand { 
+    background-color: #4aaaa5;
+    padding: 0.95rem;
+    color: #ffffff;
+    margin-left: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.7rem;
+
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #fff;
+}
+
+nav.navbar {
+    padding-right: 80px;
+    margin: 0;
+    height: 70px;
+}
+
+.nav-link {
+    color: #ccc !important;
+}
+
+.nav-link:hover {
+    color: #4aaaa5 !important;
+}
+
+.jumbotron {
+    margin-top: 50px;
+    margin-bottom: 130px;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+#portfolio-image {
+    padding-left: 20px;
+    width: 200px;
+}
+
+footer {
+    background-color: #666666;
+    padding: 20px 0 40px 0;
+    text-align: center;
+    color: #cccccc;
+    height: 50px;
+    width: 100%;
+    border-top: 10px solid #4aaaa5;
+}
+
+/* Media Queries */
+
+
+/* extra small devices */
+@media (min-width: 400px) and (max-width: 575.98px) {
+    .navbar-custom .navbar-brand { 
+        background-color: #4aaaa5;
+        padding: 1.30rem;
+        color: #ffffff;
+        margin-left: 1px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        font-size: 1.2rem;
+    
+    }
+
+    nav.navbar {
+        padding-right: 10px;
+        margin: 0;
+        height: 70px;
+    }
+
+    
+}
+
+/* small device */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-custom .navbar-brand { 
+        background-color: #4aaaa5;
+        padding: 0.95rem;
+        color: #ffffff;
+        margin-left: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        font-size: 1.7rem;
+    
+    }
+
+    nav.navbar {
+        padding-right: 35px;
+        margin: 0;
+        height: 70px;
+    }
+
+}
+
+/* medium device */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navbar-custom .navbar-brand { 
+        background-color: #4aaaa5;
+        padding: 0.95rem;
+        color: #ffffff;
+        margin-left: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        font-size: 1.7rem;
+    
+    }
+
+    nav.navbar {
+        padding-right: 45px;
+        margin: 0;
+        height: 70px;
+    }
+
+    .jumbotron {
+        margin-bottom: 130px;
+    }
+}
