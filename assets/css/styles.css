@@ -23,7 +23,7 @@ a.nav-link {
     color: rgb(187, 183, 183) !important;
 }
 
-a:hover {
+a.nav-link:hover {
     color: #4aaaa5 !important;
 }
 
@@ -44,7 +44,7 @@ div.jumbotron {
     background-color: #fff;
 }
 
-#about {
+h2 {
     color: #4aaaa5;
     font-size: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -52,6 +52,33 @@ div.jumbotron {
 
 img#portfolio-image {
     width: 250px;
+}
+
+.card-header {
+    background-color: #4aaaa5;
+}
+
+h5.card-header a {
+    color: #fff;
+}
+
+h5.card-header.text-center a:hover {
+    color: rgba(204, 204, 204, 0.836);
+    text-decoration: none;
+}
+
+.btn.btn-outline-primary {
+    border-color: #4aaaa5;
+    color: #4aaaa5;
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+.was-validated input textarea {
+    border-color: #4aaaa5 !important;
 }
 
 footer {
