@@ -1,101 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>About</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
 
-  </head>
+  <!-- Normalize CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light navbar-custom">
-      <a class="navbar-brand" href="#">Lance Rush</a>
-      <button 
-        class="navbar-toggler" type="button"  data-toggle="collapse" 
-        data-target="#navbarContent" 
-        aria-controls="navbarContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse ml-auto">
-          <ul class="navbar-nav ml-auto mr-4">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">
-                About <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-          </ul>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+  <!-- Semantic CDN -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+  
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  
+  <div class="ui bottom attached segment">
+    <div class="ui visible left vertical sidebar menu">
+      <a href="#" class="item head-sidebar">
+        <img src="./assets/images/portfolioimage.png" alt="" id="lance-image" class="ui small circular image">
+        <h2>Lance Rush</h2>
+        <p>Full Stack Developer</p>
+      </a>
+      <a class="item" href="#about-me">
+        <i class="fa-binoculars icon black"></i>
+        About
+      </a>
+      <a class="item" href="#experience">
+        <i class="fa-briefcase icon brown"></i>
+        Experience
+      </a>
+      <a class="item" href="#projects">
+        <i class="columns icon violet"></i>
+        Projects
+      </a>
+      <a class="item" href="#skills">
+        <i class="fa-terminal icon yellow"></i>
+        Skills
+      </a>
+      <a class="item" href="#education">
+        <i class="fa-graduation-cap icon green"></i>
+        Education
+      </a>
+      <a class="item" href="#contact">
+        <i class="paper plane outline icon blue"></i>
+        Contact
+      </a>
+      <a class="item" href="https://docs.google.com/document/d/1E82k663haJSj3Fm0t2L6miyDoYBYKqHlb2N-se2k2pQ/edit?usp=sharing" target="_blank">
+        <i class="file alternative icon red"></i>
+        Resume
+      </a>
+    </div>
+
+    <div class="ui column relaxed grid">
+      <div class="column right-side">
+        <div id="intro-name">
+            <p><span class="intro"></span></p>
+            <p class="job-title"></p>
+          </span>
+          <a href="#projects"><button class="ui inverted button">View my work<i class="arrow right icon"></i></button></a>
         </div>
-    </nav>
-    <!-- ./nav -->
-
-    <!-- body -->
-
-    <div class="container">
-      <div class="jumbotron">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 id="about">About</h2>
-            <hr>
-          </div>
-          <div class="col-md-11">
-            <img id="portfolio-image"
-              class="img-responsive float-left mr-4"
-              id="portfolio-image"
-              src="./assets/images/portfolioimage.png"
-              alt="portfolio image"
-            />
-            <p>
-              Hi there, you made it! I hope it wasn't too hard to get here. Did
-              the person that directed you here give you the relative path or a
-              direct path (coding reference)? Well... alright! You're probably
-              wondering where HERE is, what THIS is... let me answer those
-              questions for you. Right NOW!
-            </p>
-            <p>
-              You are here because you are looking for the best web developer
-              (pssstt -- I am talking about me 😏 ) and this is my website. Feel
-              free to browse around.
-            </p>
-            <p>
-              If you want to see what I am made of... I recommend checking out
-              the "Portfolio" section. It's really cool and I worked my tail
-              off.
-            </p>
-            <p>
-              If you like what you see, go to the "Contact" section and drop me
-              a line. I would be happy to help out on some website or develop an
-              app for you. HAVE FUN and I will chat with you later!!!
-            </p>
-          </div>
-        </div>
+        <img src="./assets/images/web-dev-bg.gif" alt="">
       </div>
     </div>
 
-    <!-- ./body -->
+    <div class="pusher" id="about-me">
+      <p>About</p>
+    </div>
 
-    <footer class="fixed-bottom">
-      &copy; Copyright
-    </footer>
-    <!-- ./footer -->
+    <div class="ui grid pusher" id="about">
+      <div class="fourteen wide column">
+        
+        <blockquote>
+            Full stack developer with a passion to create the best UI design.
+        </blockquote>
+        
+        <p>I've always had a passion to build things.  Even when I was younger, I always wondered, what if "this thing (that I was currently looking at) could to fill in the blank".  Although, in my younger years (which I wish I could take it back, or at least redo some of it), I took the easier route.  Well now I am here, took a bootcamp with KU (University of Kansas) and I have a pretty awesome portfolio.</p>
+        <p>As a web developer, I find myself looking at web sites thinking I could make this function/look so much better.  I am a driven individual that searches out for a way to master my skill. If I don't know the answer, my motto is I will find it!</p>
+      </div>
+    </div> <!-- ./about -->
+
+    <div class="ui grid pusher head-bar" id="experience">
+      <div class="fourteen wide column">
+        <p>Experience</p>
+      </div>
+    </div>
+
+    <div class="experience">
+      <div id="volunteer-job-one" class="ui centered card">
+          <div class="content">
+            <div class="state-line header">State Line Remedy</div>
+          </div>
+          <div class="content">
+            <h4 class="ui sub header">Website Setup/Design</h4>
+            <div class="ui small feed">
+              <div class="event">
+                <div class="content">
+                  <div class="summary">
+                      Worked with local band to design and set up website for future gigs and to help drive traffic to the website.  Used WordPress to develop a design and functionality to the site. Still provide updates or other items they may need to improve the site.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+      <div id="volunteer-job-two" class="ui centered card">
+          <div class="content">
+            <div class="state-line header">Code For KC - Civic Coding Meetup</div>
+          </div>
+          <div class="content">
+            <h4 class="ui sub header">Redesign Website</h4>
+            <div class="ui small feed">
+              <div class="event">
+                <div class="content">
+                  <div class="summary">
+                      Worked with local band to design and set up website for future gigs and to help drive traffic to the website.  Used WordPress to develop a design and functionality to the site. Still provide updates or other items they may need to improve the site.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div> <!-- ./experience -->
+    
+    <div class="ui grid pusher head-bar" id="projects">
+      <div class="fourteen wide column">
+        <p>Projects</p>
+      </div>
+    </div> <!-- ./projects -->
+
+    <div class="ui cards pusher">
+      <div class="card">
+        <div class="column">
+          <div class="ui move reveal card">
+            <div class="visible content">
+              <img src="./assets/images/hang-man.jpg" alt="">
+            </div>
+            <div class="hidden content">
+              <h1>The Office Trivia</h1>
+              <p><strong>Bootstrap CSS</strong> frontend</p>
+              <p>UI/UX using<strong> jQuery</strong></p>
+              <a href="https://github.com/lrush85/TriviaGame" target="_blank">
+                <button class="ui circular github icon button red">
+                  <i class="github icon"></i>
+                </button>
+              </a>
+              
+              <a href="https://lrush85.github.io/TriviaGame/" target="_blank">
+                <button class="ui circular external alternate icon button yellow">
+                    <i class="external alternate icon"></i>
+                </button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="column">
+          <div class="ui move reveal card">
+            <div class="visible content">
+              <img src="./assets/images/rpg-game.png" alt="">
+            </div>
+            <div class="hidden content">
+              <h1>Word Guessing Game</h1>
+              <p><strong>Bootstrap CSS</strong> frontend</p>
+              <p>UI/UX using<strong> jQuery</strong></p>
+              <p><strong>NFL</strong> theming</p>
+              <a href="https://github.com/lrush85/word-guess-game" target="_blank">
+                <button class="ui circular github icon button red">
+                    <i class="github icon"></i>
+                </button>
+              </a>
+              <a href="https://lrush85.github.io/word-guess-game/" target="_blank">
+                <button class="ui circular external alternate icon button yellow">
+                    <i class="external alternate icon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="column">
+          <div class="ui move reveal card">
+            <div class="visible content">
+              <img src="./assets/images/rps.png" alt="">
+            </div>
+            <div class="hidden content">
+              <h1>Giphy App</h1>
+              <p><strong>Bootstrap CSS</strong> frontend</p>
+              <p>UI/UX using<strong> jQuery</strong></p>
+              <p>Themed <strong>Nintendo Games</strong></p>
+              <a href="https://github.com/lrush85/giphy-app" target="_blank">
+                <button class="ui circular github icon button red">
+                  <i class="github icon"></i>
+                </button>
+              </a>
+              <a href="https://lrush85.github.io/giphy-app/" target="_blank">
+                <button class="ui circular external alternate icon button yellow">
+                    <i class="external alternate icon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ./ui card -->
+
+    <div class="ui cards pusher">
+      <div class="card">
+        <div class="column">
+          <div class="ui move reveal card">
+            <div class="visible content">
+              <img src="./assets/images/rutgersWidget.png" alt="">
+            </div>
+            <div class="hidden content">
+              <h1>Train Time</h1>
+              <p><strong>Bootstrap CSS</strong> frontend</p>
+              <p>UI/UX using<strong> jQuery</strong></p>
+              <p><strong>Firebase</strong> database</p>
+              <a href="https://lrush85.github.io/train-time/" target="_blank">
+                <button class="ui circular github icon button red">
+                  <i class="github icon"></i>
+                </button>
+              </a>
+              <a href="https://github.com/lrush85/train-time" target="_blank">
+                <button class="ui circular external alternate icon button yellow">
+                    <i class="external alternate icon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+          <div class="column">
+            <div class="ui move reveal card">
+              <div class="visible content">
+                <img src="./assets/images/rpgGame.png" alt="">
+              </div>
+              <div class="hidden content">
+                <h1>Crystal Collector</h1>
+                <p><strong>Bootstrap CSS</strong> frontend</p>
+                <p>UI/UX using<strong> jQuery</strong></p>
+                <p>Random number per <strong>crystal </strong>and have to equal the random number.</p>
+                <a href="https://lrush85.github.io/unit-4-game/" target="_blank">
+                  <button class="ui circular github icon button red">
+                    <i class="github icon"></i>
+                  </button>
+                </a>
+                <a href="https://github.com/lrush85/unit-4-game" target="_blank">
+                  <button class="ui circular external alternate icon button yellow">
+                      <i class="external alternate icon"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="column">
+          <div class="ui move reveal card">
+            <div class="visible content">
+              <img src="./assets/images/LOGO.jpg" alt="">
+            </div>
+            <div class="hidden content">
+              <h1>Step2Goal</h1>
+              <p><strong>Materialize CSS</strong> frontend</p>
+              <p>UI/UX using<strong> jQuery</strong></p>
+              <p>Multiple <strong>API</strong> calls with Google and Fitbit</p>
+              <a href="https://rpr8605.github.io/steps2goal/" target="_blank">
+                <button class="ui circular github icon button red">
+                  <i class="github icon"></i>
+                </button>
+              </a>
+              <a href="https://github.com/rpr8605/step2goal" target="_blank">
+                <button class="ui circular external alternate icon button yellow">
+                    <i class="external alternate icon"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- ./ui card -->
+    
+    
+    <div class="ui grid pusher head-bar" id="skills">
+      <div class="fourteen wide column">
+        <p>Skills</p>
+      </div>
+    </div> <!-- ./skills -->
+  
+    <div class="ui card pusher skill-card">
+      <div class="content">
+        <div class="header">HTML</div>
+      </div>
+      <div class="content">
+        <div class="ui small header">
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                <div class="grid">
+                  <div class="ui two column grid">
+                    <div class="column">
+                        <img src="./assets/images/html5.png" alt="">
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/images/jekyll.png" alt="">
+                        <h3>Jekyll</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ./html section -->
+
+    <div class="ui card pusher skill-card">
+      <div class="content">
+          <div class="header">CSS &amp; Design</div>
+        </div>
+        <div class="content">
+          <div class="ui header">
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <div class="grid">
+                  <div class="ui four column grid">
+                    <div class="column">
+                        <img src="./assets/images/css3.png  " alt="">
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/images/bootstrap.png" alt="">
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="column">
+                        <img id="materialize" src="./assets/images/materialize.png" alt="">
+                        <h3>Materialize</h3>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/images/photoshop.png" alt="">
+                        <h3>Photoshop</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ./css section -->
+
+    <div class="ui card pusher skill-card">
+      <div class="content">
+        <div class="header">Javascript</div>
+      </div>
+      <div class="content">
+          <div class="ui header">
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <div class="grid">
+                  <div class="ui four column grid">
+                    <div class="column">
+                        <img id="react" src="./assets/images/react.png" alt="">
+                        <h3>React</h3>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/images/javascript.png" alt="">
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/images/jquery.png" alt="">
+                        <h3>jQuery</h3>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/images/nodejs.png" alt="">
+                        <h3>Node</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ./javascript section -->
+
+    <div class="ui card pusher skill-card">
+        <div class="content">
+          <div class="header">CMS</div>
+        </div>
+        <div class="content">
+            <div class="ui header">
+              <div class="event">
+                <div class="content">
+                  <div class="summary">
+                    <div class="grid">
+                    <div class="ui one column grid">
+                      <div class="column">
+                          <img id="wordpress" src="./assets/images/wordpress.png" alt="">
+                          <h3>Wordpress</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- ./cms section -->
+
+    <div class="ui card pusher skill-card">
+        <div class="content">
+          <div class="header">Version Control & Deployment</div>
+        </div>
+        <div class="content">
+            <div class="ui header">
+              <div class="event">
+                <div class="content">
+                  <div class="summary">
+                    <div class="grid">
+                    <div class="ui two column grid">
+                      <div class="column">
+                          <img src="./assets/images/github.png" alt="">
+                          <h3>Github</h3>
+                      </div>
+                      <div class="column">
+                          <img src="./assets/images/heroku.png" alt="">
+                          <h3>Heroku</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- ./version control -->
+
+    <div class="ui grid pusher head-bar" id="education">
+      <div class="fourteen wide column">
+        <p>Education</p>
+      </div>
+    </div> <!-- ./education -->
+    
+    <div class="ui cards grid pusher">
+      <div class="ui three column grid">
+
+        <div class="ui card edu-card">
+          <div class="content">
+            <img class="ui left floated avatar image ku" src="./assets/images/ku-icon.png" alt="">
+            <div class="header">University of Kansas</div>
+          </div>
+          <div class="content">
+            <div class="ui small header">
+              <div class="event">
+                <div class="content">
+                  <div class="summary">
+                    <div class="grid">
+                      <div class="ui one column grid">
+                        <div class="column">
+                            <h3>Web Developer Boot Camp</h3>
+                            <h3><em>MERN</em> Stack Bootcamp</h3>
+                            <h4>Overland Park, KS</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui card edu-card">
+          <div class="content">
+            <img class="ui left floated avatar image ku" src="./assets/images/mssu-logo.png" alt="">
+            <div class="header">Missouri Southern University</div> 
+          </div>
+          <div class="content">
+            <div class="ui small header">
+              <div class="event">
+                <div class="content">
+                  <div class="summary">
+                    <div class="grid">
+                      <div class="ui one column grid">
+                        <div class="column">
+                            <h3>Undergraduate Degree</h3>
+                            <h3><em>BSBA</em> in Human Resource Management</h3>
+                            <h4>Joplin, MO</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-  </body>
+        <div class="ui card edu-card">
+            <div class="content">
+              <img class="ui left floated avatar image ku" src="./assets/images/south-university.jpeg" alt="">
+              <div class="header">South University</div>
+            </div>
+            <div class="content">
+              <div class="ui small header">
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      <div class="grid">
+                        <div class="ui one column grid">
+                          <div class="column">
+                              <h3>Undergraduate Degree</h3>
+                              <h3><em>AS</em> in Business Management</h3>
+                              <h4>Savannah, GA</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div> <!-- ./edu-card -->
+        
+    <div class="ui grid pusher head-bar" id="contact">
+      <div class="fourteen wide column">
+        <p>Contact</p>
+      </div>
+    </div> <!-- ./contact -->
+
+    <div class="ui pusher contact-area">
+      <h2>Contact Me</h2>
+      <a href="mailto:lance.rush1@gmail.com">
+        <button class="contact-button">
+          <i class="massive envelope open outline icon"></i>
+        </button>
+      </a>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
+
+    
+
+    <!-- Semantic CDN JS -->
+    <script         
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js">
+    </script>
+
+    <!-- Typed.js CDN -->
+    <script   
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js">
+    </script>
+
+    <script 
+      src="./assets/javascript/main.js">
+    </script>
+</body>
 </html>
