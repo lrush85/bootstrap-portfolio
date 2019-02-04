@@ -23,8 +23,7 @@ a.item {
 div#intro-name {
     z-index: 1;
     position: absolute;
-    margin-top: 350px;
-    margin-left: 850px;
+    text-align: center;
     color: #fff;
     font-size: "Fira Sans", sans-serif;
 }

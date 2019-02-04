@@ -17,9 +17,13 @@
 
   <!-- Semantic CDN -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-  
+
   <!-- Local CSS -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+
+  <!-- Media CSS -->
+  <link rel="stylesheet" href="./assets/css/media.css">
+
 </head>
 <body>
   
@@ -60,8 +64,8 @@
       </a>
     </div>
 
-    <div class="ui column relaxed grid">
-      <div class="column right-side">
+    <div class="ui column relaxed grid pusher">
+      <div class="four column right-side">
         <div id="intro-name">
             <p><span class="intro"></span></p>
             <p class="job-title"></p>
@@ -94,7 +98,7 @@
       </div>
     </div>
 
-    <div class="experience">
+    <div class="ui grid pusher experience">
       <div id="volunteer-job-one" class="ui centered card">
           <div class="content">
             <div class="state-line header">State Line Remedy</div>
@@ -138,7 +142,7 @@
       </div>
     </div> <!-- ./projects -->
 
-    <div class="ui cards pusher">
+    <div class="ui cards pusher projects">
       <div class="card">
         <div class="column">
           <div class="ui move reveal card">
@@ -219,7 +223,7 @@
       </div>
     </div> <!-- ./ui card -->
 
-    <div class="ui cards pusher">
+    <div class="ui cards pusher projects">
       <div class="card">
         <div class="column">
           <div class="ui move reveal card">
@@ -465,53 +469,23 @@
       </div>
     </div> <!-- ./education -->
     
-    <div class="ui cards grid pusher">
-      <div class="ui three column grid">
+    <div class="ui cards grid pusher" id="education-area">
+      <div class="ui column grid">
 
         <div class="ui card edu-card">
           <div class="content">
             <img class="ui left floated avatar image ku" src="./assets/images/ku-icon.png" alt="">
-            <div class="header">University of Kansas</div>
+            <div class="card-header header">University of Kansas</div>
           </div>
           <div class="content">
             <div class="ui small header">
               <div class="event">
                 <div class="content">
                   <div class="summary">
-                    <div class="grid">
-                      <div class="ui one column grid">
-                        <div class="column">
-                            <h3>Web Developer Boot Camp</h3>
-                            <h3><em>MERN</em> Stack Bootcamp</h3>
-                            <h4>Overland Park, KS</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ui card edu-card">
-          <div class="content">
-            <img class="ui left floated avatar image ku" src="./assets/images/mssu-logo.png" alt="">
-            <div class="header">Missouri Southern University</div> 
-          </div>
-          <div class="content">
-            <div class="ui small header">
-              <div class="event">
-                <div class="content">
-                  <div class="summary">
-                    <div class="grid">
-                      <div class="ui one column grid">
-                        <div class="column">
-                            <h3>Undergraduate Degree</h3>
-                            <h3><em>BSBA</em> in Human Resource Management</h3>
-                            <h4>Joplin, MO</h4>
-                        </div>
-                      </div>
+                    <div class="edu-content">
+                        <h3>Web Developer Boot Camp</h3>
+                        <h3><em>MERN</em> Stack Bootcamp</h3>
+                        <h4>Overland Park, KS</h4>
                     </div>
                   </div>
                 </div>
@@ -523,22 +497,41 @@
 
         <div class="ui card edu-card">
             <div class="content">
-              <img class="ui left floated avatar image ku" src="./assets/images/south-university.jpeg" alt="">
-              <div class="header">South University</div>
+              <img class="ui left floated avatar image ku" src="./assets/images/mssu-logo.png" alt="">
+              <div class="card-header header">Missouri Southern State University</div>
             </div>
             <div class="content">
               <div class="ui small header">
                 <div class="event">
                   <div class="content">
                     <div class="summary">
-                      <div class="grid">
-                        <div class="ui one column grid">
-                          <div class="column">
-                              <h3>Undergraduate Degree</h3>
-                              <h3><em>AS</em> in Business Management</h3>
-                              <h4>Savannah, GA</h4>
-                          </div>
-                        </div>
+                      <div class="edu-content mssu">
+                          <h3>Undergraduate Degree</h3>
+                          <h3><em>BSBA</em> in Human Resource Management</h3>
+                          <h4>Joplin, MO</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="ui card edu-card">
+            <div class="content">
+              <img class="ui left floated avatar image ku" src="./assets/images/south-university.jpeg" alt="">
+              <div class="card-header header">South University</div>
+            </div>
+            <div class="content">
+              <div class="ui small header">
+                <div class="event">
+                  <div class="content">
+                    <div class="summary">
+                      <div class="edu-content">
+                          <h3>Undergraduate Degree</h3>
+                          <h3><em>AS</em> in Business Management</h3>
+                          <h4>Savannah, GA</h4>
                       </div>
                     </div>
                   </div>
@@ -552,7 +545,7 @@
     </div> <!-- ./edu-card -->
         
     <div class="ui grid pusher head-bar" id="contact">
-      <div class="fourteen wide column">
+      <div class="column">
         <p>Contact</p>
       </div>
     </div> <!-- ./contact -->
