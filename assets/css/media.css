@@ -1425,8 +1425,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
     div#intro-name {
         z-index: 1;
         position: absolute;
-        margin-left: 10%;
-        margin-top: 2%;
+        margin-left: 26%;
+        margin-top: 13%;
         text-align: justify;
         color: #fff;
         font-size: "Fira Sans", sans-serif;
@@ -1454,6 +1454,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-top: 120px;
         font-size: 20px;
         font-weight: 400;
+        margin-left: 29%;
     }
     
     div.column.right-side {
@@ -1483,10 +1484,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin-right: 10%;
         margin-bottom: 10%;
         margin-top: -5%;
+        line-height: 50px;
+        padding: 10px;
     }
     
     #about {
-        padding: 8% 14% 8% 15%;
+        padding: 10% 14% 15% 15%;
     }
     
     #about p {
@@ -1650,17 +1653,29 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     div#education-area {
-        margin: 5% 0 !important;
+        margin: 2% 0;
         padding: 0;
     }
     
     div.ui.edu-card {
        display: inline-block;
        width: 50%;
+       margin-left: 22%;
     }
 
     div.card-header.header {
-        padding-top: 3%;
+        padding-top: 1.5%;
+        text-align: center;
+    }
+
+    div.edu-content {
+        text-align: center;
+        width: 100%;
+        margin-left: 165%;
+    }
+
+    div.edu-content.mssu {
+        margin-left: 95%;
     }
     
     
